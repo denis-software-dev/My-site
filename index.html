@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Личный сайт Дениса</title>
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <button onclick="showSection('home')">Главная</button>
+            <button onclick="showSection('about')">Обо мне</button>
+            <button onclick="showSection('services')">Услуги</button>
+            <button onclick="showSection('contact')">Контакты</button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="section active">
+            <h2>Добро пожаловать!</h2>
+            <p>Это мой личный сайт, созданный для общения и обмена опытом. Здесь я рассказываю о своём творчестве и достижениях в области программирования.</p>
+        </section>
+        <section id="about" class="section">
+            <h2>Обо мне</h2>
+            <p>Меня зовут Денис, и я занимаюсь программированием уже пять лет. За это время я освоил несколько языков программирования, таких как Python, Java и C++. Мой опыт охватывает создание приложений, автоматизацию процессов и оптимизацию кода для улучшения пользовательского опыта.</p>
+            <p>Мои проекты разнообразны: от простых инструментов до сложных систем. Постоянное стремление к изучению новых технологий и применению лучших практик — это то, что помогает мне в профессиональном росте.</p>
+            <p>Я открыт к новым вызовам и интересуюсь последними трендами в сфере технологий. Моя цель — создавать качественные решения, которые помогают пользователям и упрощают их задачи.</p>
+        </section>
+        <section id="services" class="section">
+            <h2>Услуги</h2>
+            <div class="service-block">
+                <h3>Разработка веб-приложений</h3>
+                <p>Создание современных веб-приложений с использованием передовых технологий и подходов. Оптимизация интерфейса и пользовательского опыта.</p>
+            </div>
+            <div class="service-block">
+                <h3>Автоматизация задач</h3>
+                <p>Разработка программ для автоматизации рутинных процессов, что позволит сэкономить ваше время и силы.</p>
+            </div>
+            <div class="service-block">
+                <h3>Консультации и обучение</h3>
+                <p>Помогу разобраться в сложных аспектах программирования и новых технологиях. Обучение программированию на различных языках.</p>
+            </div>
+        </section>
+        <section id="contact" class="section">
+            <h2>Контакты</h2>
+            <p>Свяжитесь со мной: info@example.com</p>
+        </section>
+    </main>
+
+    <footer>
+        <nav>
+            <a href="#" onclick="showSection('home')">Главная</a>
+            <a href="#" onclick="showSection('about')">Обо мне</a>
+            <a href="#" onclick="showSection('services')">Услуги</a>
+            <a href="#" onclick="showSection('contact')">Контакты</a>
+        </nav>
+        <p>&copy; 2024 Денис. Все права защищены.</p>
+        <p>Место для общения и обмена опытом в программировании.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
