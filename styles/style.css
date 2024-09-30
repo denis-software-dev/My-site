@@ -1,3 +1,4 @@
+/* Общие стили */
 * {
     box-sizing: border-box;
 }
@@ -18,17 +19,22 @@ header {
 
 nav {
     margin: 1em 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Позволяет кнопкам переноситься на следующую строку */
 }
 
 nav button {
-    margin: 0 10px;
-    padding: 10px 20px;
+    margin: 5px; /* Уменьшили отступы между кнопками */
+    padding: 10px 15px; /* Подходящий размер для мобильных устройств */
     background: linear-gradient(to right, #0074D9, #00aaff);
     border: none;
     border-radius: 5px;
     color: white;
     cursor: pointer;
+    text-decoration: none;
     transition: background 0.3s, transform 0.3s;
+    font-size: 1rem; /* Размер шрифта по умолчанию */
 }
 
 nav button:hover {
@@ -36,6 +42,7 @@ nav button:hover {
     transform: scale(1.05);
 }
 
+/* Главный контент */
 main {
     display: flex;
     flex-direction: column;
@@ -58,12 +65,87 @@ main {
     display: block;
 }
 
+/* Блоки услуг */
+.service-block {
+    background-color: rgba(0, 116, 217, 0.3);
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.service-block h3 {
+    margin-top: 0;
+}
+
+/* Футер */
 footer {
     background: rgba(0, 0, 0, 0.7);
     color: white;
     text-align: center;
-    padding: 1em 0;
+    padding: 20px;
     position: relative;
     width: 100%;
     bottom: 0;
+}
+
+footer nav {
+    margin-bottom: 15px;
+}
+
+footer a {
+    color: white; /* Цвет текста для ссылок в футере */
+    text-decoration: none; /* Убираем подчеркивание */
+    margin: 0 10px; /* Отступы между ссылками */
+}
+
+footer a:hover {
+    text-decoration: underline; /* Добавляем подчеркивание при наведении */
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+/* Адаптивные стили */
+@media (max-width: 768px) {
+    nav button {
+        font-size: 0.9rem; /* Уменьшаем размер шрифта для мобильных устройств */
+        padding: 8px 10px; /* Меньшие отступы для мобильных */
+    }
+}
+
+@media (max-width: 480px) {
+    nav button {
+        font-size: 0.8rem; /* Еще меньше размер шрифта для очень маленьких экранов */
+        padding: 6px 8px; /* Еще меньшие отступы для мобильных */
+    }
+
+    header {
+        padding: 0.5em 0; /* Меньше верхнего и нижнего отступа в хедере */
+    }
+}
+
+/* Блоки проектов */
+.project-block {
+    background-color: rgba(0, 116, 217, 0.3);
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.project-block h3 {
+    margin-top: 0;
+}
+
+.project-block p {
+    margin: 5px 0; /* Отступы между параграфами */
+}
+
+.project-block a {
+    color: #0074D9; /* Цвет ссылок на проекты */
+    text-decoration: underline; /* Подчеркивание ссылок */
+}
+
+.project-block a:hover {
+    color: #00aaff; /* Цвет при наведении */
 }
